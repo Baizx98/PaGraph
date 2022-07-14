@@ -11,7 +11,7 @@ from dgl.data.utils import get_download_dir
 
 def convert_reddit_data(dataset, out_folder, self_loop=False):
     """
-    Load DGL graph dataset
+    Load DGL graph dataset and convert to PaGraph
     """
     self_loop_str = ""
     if self_loop:
