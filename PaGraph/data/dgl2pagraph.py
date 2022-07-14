@@ -17,7 +17,7 @@ def convert_reddit_data(dataset, out_folder, self_loop=False):
     if self_loop:
         self_loop_str = "_self_loop"
     # 数据集不在默认下载目录时需要手动更改
-    download_dir = get_download_dir()
+    download_dir = "/home8t/bzx/dataset/"
     extract_dir = os.path.join(
         download_dir, "{}{}".format(dataset, self_loop_str))
 
